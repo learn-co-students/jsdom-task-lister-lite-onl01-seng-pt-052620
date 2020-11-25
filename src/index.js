@@ -29,4 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.parentElement.remove()
     }
   })
-});
+ });
