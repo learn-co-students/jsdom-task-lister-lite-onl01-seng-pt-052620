@@ -35,3 +35,26 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+
+#tasks {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+#tasks li {
+  margin-bottom: 20px;
+}
+
+#tasks li .delete-tasks {
+  border: 1px solid lightslategrey;
+  padding: 0 4px 2px 3px;
+  border-radius: 50%;
+  background: pink;
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: darkslategray;
+  position: relative;
+  bottom: 2px;
+  cursor: pointer;
+}
