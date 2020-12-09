@@ -1,3 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // your code here
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   event.preventDefault
+
+
+// });
+
+
+document.addEventListener("DOMContentLoaded", function(event){
+  event.preventDefault
+}
+)
