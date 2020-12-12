@@ -26,13 +26,12 @@ const createNewTask = function (e) {
 
   newTask.appendChild(button);
 
+//tried implementing a eventListening for when the 'X' is clicked to remove the task but it isn't functional
   button.addEventListener('click', function(e) {
     if(e.target.nodeName === 'button') {
       newUl.removeChild(newTask);
     }
   })
-
-  //const removeTask = document.getElementById('task.id').remove()
 
   //calls on appendNewTask function that appends the 'li' new tasks to the 'ul' withing a 'div' tag
   appendNewTask(newTask);
