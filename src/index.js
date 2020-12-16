@@ -22,18 +22,20 @@ const createNewTask = function (e) {
   newTask.innerHTML = newTaskDescription.value;
   newTask.setAttribute('id', 'task-id');
   const button = document.createElement('button');
-  button.innerHTML = ' X';
+  button.setAttribute('id', 'my-button');
+  button.innerHTML = 'X';
 
   newTask.appendChild(button);
 
-//tried implementing a eventListening for when the 'X' is clicked to remove the task but it isn't functional
-  button.addEventListener('click', function(e) {
-    if(e.target.nodeName === 'button') {
-      newUl.removeChild(newTask);
-    }
+  document.addEventListener('click', function(e) {
+    const button = document.getElementById('my-button');
+    const tasks = document.getElementById('tasks').removeChild(newTask);
   })
 
-  //calls on appendNewTask function that appends the 'li' new tasks to the 'ul' withing a 'div' tag
+//tried implementing a eventListening for when the 'X' is clicked to remove the task but it isn't functional
+
+
+  //calls on appendNewTask function that appends the 'li' new tasks to the 'ul' within a 'div' tag
   appendNewTask(newTask);
   e.target.reset();
 
